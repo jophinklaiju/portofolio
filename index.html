@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jophin</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <h1 class="logo">Porto<span>folio</span></h1>
+
+        <ul class="nav-items">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Skils</a>
+            </li>
+            <li>
+                <a href="">Works</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+   <main class="landing">
+    <h1>Hey There Im <span>Jophin</span></h1>
+    <p>I Am into <span>Web designer</span></p>
+    <a href="#" class="about-me">About me
+
+       <i class="fa-solid fa-play"></i>
+
+    </a>
+    <div class="social">
+    <a href="https://www.instagram.com/jop.h1nx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/jophin-k-laiju-679a79350/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+
+        
+   </main>
+
+   <section>
+    <h1>Skils</h1>
+    <div class="card-container">
+  <div class="card">
+    <img class="card-image" src="/img/mern.png" alt="">
+    <h6>MERN</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corporis exercitationem mollitia quisquam incidunt nobis veniam excepturi voluptate tenetur natus accusantium magnam quam reprehenderit maxime voluptatem, nesciunt rerum soluta atque odit optio sint? Rem, vitae. Harum et quaerat ipsum tempora.</p>
+  </div>
+  <div class="card">
+    <img class="card-image" src="/img/html.png" alt="">
+    <h6>HTML,CSS,JS</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam ea dolores culpa, cupiditate quo aliquam assumenda dicta sapiente officia beatae doloremque, perferendis earum, dolore impedit perspiciatis adipisci! Nam labore culpa omnis totam ipsa, illo voluptatum repellendus eius aliquam numquam.</p>
+  </div>
+  <div class="card">
+    <img class="card-image" src="/img/python.png" alt="">
+    <h6>Python</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minus voluptatum ad, veritatis veniam sunt ipsam hic maxime fugit! Optio voluptatum saepe nemo quaerat porro illum quo et fugit perferendis ut. Ab quos facere, reprehenderit in illum nam autem dolor laboriosam natus deserunt doloribus sequi tenetur mollitia quibusdam dolores numquam aspernatur? Ratione impedit sint odit iure doloremque itaque omnis modi ducimus recusandae! Delectus a praesentium, eius dignissimos deleniti consequatur iste?</p>
+  </div>
+  <div class="card">
+    <img class="card-image" src="/img/c.png" alt="">
+    <h6>C</h6>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, neque veritatis corrupti est ipsa beatae laborum magni sunt enim officiis saepe animi optio explicabo nam. Doloribus perferendis architecto debitis corrupti est, eligendi nulla repellat qui? Fuga a doloremque sit maxime.</p>
+  </div>
+</div>
+
+   </section>
+   <script>
+
+    const burger = document.getElementById('burger-menu');
+    const nav = document.getElementById('nav-items');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
+   </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Share+Tech&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 4.5rem;
+    align-items: center;
+    background-color:transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.line{
+    width: 1.8rem;
+    height: 0.25rem;
+    background: #fff;
+    margin: 0.2rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logo{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.logo span{
+    color: red;
+    font-weight: bold;
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+.nav-items li{
+    margin: 0rem 1rem;
+}
+.nav-items li a{
+    text-decoration: none;
+    color: #fff;
+}
+.landing{
+    background-image: url('img/bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 4.5rem;
+    box-shadow: inset 10000px 0 16px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing span{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.about-me {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: red;
+    width: fit-content;
+    margin: 1rem auto; /* Centers the button horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Adds space between text and icon */
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: background 0.3s ease; /* Optional: hover effect */
+}
+
+.about-me:hover {
+    background-color: darkred; /* Optional: hover effect */
+}
+.social {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 1.5rem; /* Space between icons */
+    margin-top: 1rem;
+}
+
+.social a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: red; /* Optional: hover effect */
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Adds space between cards */
+  padding: 2rem 1rem;
+}
+
+.card h6{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: black;
+}
+.card p{
+    font-size: 0.8rem;
+    color: black;
+}
+.card-container .card{
+    width: 16rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 16px rgba(199, 92, 92, 0.2);
+    border-radius: 15px;
+    text-align: center;
+}
+.card-image{
+    width: 6rem;
+    
+}
+section {
+  background-image: url('/img/card.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4.5rem;
+  box-shadow: inset 10000px 0 16px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width:1157px){
+    .card p{
+        font-size: 0.7rem;
+    }
+    .card h6{
+        margin: 1rem 0;
+    }
+    .card-image{
+        width: 5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+  section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; /* Optional: Let it shrink if content is small */
+    padding: 2rem 1rem;
+}
+}
+
+
+
+
+
+/* media started */
+@media only screen and (max-width: 600px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 60px; /* adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.85);
+        width: 90%;
+        padding: 1rem;
+        border-radius: 10px;
+        z-index: 999;
+    }
+
+    .nav-items.nav-active {
+        display: flex;
+    }
+
+    .nav-items li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .landing p {
+        font-size: 0.9rem;
+    }
+
+    .about-me {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    .header {
+        padding: 0 1rem;
+        height: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width:575px){
+    section{
+        padding-top: 30rem;
+    }
+}
+
+
+
